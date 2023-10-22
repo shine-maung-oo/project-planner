@@ -1,7 +1,7 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="navbar">
+    <router-link to="/">Projects</router-link> 
+    <router-link to="/addproject">Add Project</router-link> 
   </nav>
   <router-view/>
 </template>
@@ -11,20 +11,26 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 600px;
+  margin: 50px auto;
+  color: #2c3e50;
+}
+
+.navbar{
   text-align: center;
-  color: #2c3e50;
+  padding-bottom: 20px;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
+.navbar a{
+  font-size: 20px;
+  text-decoration: none;
+  color: #a4a4a4;
+  margin: 0 20px;
+  text-transform: uppercase;
   font-weight: bold;
-  color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.navbar .router-link-active{
+  color: aquamarine;
 }
 </style>
