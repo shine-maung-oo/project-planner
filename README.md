@@ -1,4 +1,4 @@
-# planer
+# project planner
 
 ## Project setup
 ```
