@@ -51,7 +51,7 @@ export default {
       }
   },
   mounted(){
-    fetch('http://localhost:3000/projects')
+    fetch('https://planner-seven-rho.vercel.app/projects')
     .then((response)=>{
       return response.json();
     })
